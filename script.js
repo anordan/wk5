@@ -19,9 +19,9 @@ var churchillSpeech = {
     },
     speechesArray = [churchillSpeech, ghandiSpeech, demosthenesSpeech];
 
-    var name = window.prompt('What is your name?');
-    if (name === 'string' && name !==""){
-      console.log("hi" + name);
+    var user = window.prompt('What is your name?');
+    if ( typeof user === 'string' && user !==""){
+      console.log("hi" + user);
     } else {
       console.log("ok, I'll just call you user.");
     }
@@ -55,7 +55,7 @@ if (speechesArray[0].yearIsBCE) {
 if (speechesArray[0].year < speechesArray[1].year && speechesArray[0].year < speechesArray[2].year){
   alert("This is the oldest speech on the page.");
 }
-else if(speechesArray[0].year > speeches[1].year && speechesArray[0].year > speechesArray[2].year){
+else if(speechesArray[0].year > speechesArray[1].year && speechesArray[0].year > speechesArray[2].year){
   alert("This is the most recent speech on the page.");
 }
 });
@@ -72,7 +72,7 @@ if (speechesArray[1].yearIsBCE) {
 if (speechesArray[1].year < speechesArray[0].year && speechesArray[1].year < speechesArray[2].year){
   alert("This is the oldest speech on the page.");
 }
-else if(speechesArray[1].year > speeches[0].year && speechesArray[1].year > speechesArray[2].year){
+else if(speechesArray[1].year > speechesArray[0].year && speechesArray[1].year > speechesArray[2].year){
   alert("This is the most recent speech on the page.");
 }
 });
@@ -88,7 +88,7 @@ if (speechesArray[2].yearIsBCE) {
 if (speechesArray[2].year < speechesArray[0].year && speechesArray[2].year < speechesArray[1].year){
   alert("This is the oldest speech on the page.");
 }
-else if(speechesArray[2].year > speeches[0].year && speechesArray[2].year > speechesArray[1].year){
+else if(speechesArray[2].year > speechesArray[0].year && speechesArray[2].year > speechesArray[1].year){
   alert("This is the most recent speech on the page.");
 }
   //Code in here executes when the user clicks the "Demosthenes" button.
